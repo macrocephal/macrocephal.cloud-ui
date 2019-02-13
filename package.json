@@ -1,7 +1,6 @@
 {
   "name": "macrocephal.cloud-ui",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/macrocephal/macrocephal.cloud-ui.git",
   "author": "SalathielGenese <salathielgenese@gmail.com>",
   "license": "MIT"
