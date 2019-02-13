@@ -11,7 +11,7 @@
     "dev:scss": "yarn run chokidar 'scss/**/*.scss' --command \"yarn build:scss\"",
     "dev:server": "yarn run live-server --cors --no-css-inject --ignore=node_modules,scss",
     "dev:deploy": "yarn run chokidar 'css/**/*.css' '**/*.html' --ignore node_modules --ignore scss --command \"yarn deploy\"",
-    "dev": "yarn run concurrently --restart-after 3000 --restart-tries 600 \"yarn run dev:scss\" \"yarn dev:server\""
+    "dev": "yarn run concurrently --restart-after 3000 --restart-tries 600 \"yarn run dev:scss\" \"yarn dev:server\" \"yarn dev:deploy\""
   },
   "devDependencies": {
     "chokidar-cli": "^1.2.1",
