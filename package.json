@@ -13,7 +13,6 @@
   "devDependencies": {
     "chokidar-cli": "^1.2.1",
     "concurrently": "^4.1.0",
-    "http-server": "^0.11.1",
     "node-sass": "^4.11.0"
   }
 }
