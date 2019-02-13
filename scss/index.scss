@@ -21,6 +21,10 @@
     }
 }
 
+p + p {
+    margin-top: .75em;
+}
+
 html > body {
     display: flex;
     min-height: 100vh;
