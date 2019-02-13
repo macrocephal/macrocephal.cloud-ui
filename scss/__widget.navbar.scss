@@ -15,8 +15,8 @@
 
     > :not( hr ) {
         font-weight: bold;
-        padding: $padding;
         font-family: Signika;
+        padding: #{$padding * .375} $padding;
 
         &:not(:first-child) {
             position: relative;
