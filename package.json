@@ -13,6 +13,7 @@
   "devDependencies": {
     "chokidar-cli": "^1.2.1",
     "concurrently": "^4.1.0",
+    "live-server": "^1.2.1",
     "node-sass": "^4.11.0"
   }
 }
