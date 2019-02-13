@@ -7,7 +7,7 @@
   "scripts": {
     "build": "yarn build:scss",
     "build:scss": "yarn run node-sass --source-map true --source-map-embed --output-style expanded --output css --recursive scss",
-    "dev": "yarn run concurrently --restart-after 3000 --restart-tries 600 \"yarn run dev:scss\" \"yarn run http-server --cors -o\"",
+    "dev": "yarn run concurrently --restart-after 3000 --restart-tries 600 \"yarn run dev:scss\" \"yarn run live-server --cors\"",
     "dev:scss": "yarn run chokidar 'scss/**/*.scss' --command \"yarn build:scss\""
   },
   "devDependencies": {
