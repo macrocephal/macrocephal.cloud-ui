@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "repository": "https://github.com/macrocephal/macrocephal.cloud-ui.git",
   "author": "SalathielGenese <salathielgenese@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn build:scss",
+    "build:scss": "yarn run node-sass --source-map true --source-map-embed --output-style expanded --output css --recursive scss",
+    "dev": "yarn run concurrently \"yarn run dev:scss\" \"yarn run http-server --cors -o\"",
+    "dev:scss": "yarn run node-sass --watch --source-map true --source-map-embed --output-style expanded --output css --recursive scss"
+  }
 }
