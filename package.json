@@ -8,10 +8,10 @@
     "build": "yarn build:scss",
     "deploy": "now && now alias",
     "build:scss": "yarn run node-sass --source-map true --source-map-embed --output-style expanded --output css --recursive scss",
-    "dev": "yarn run concurrently --restart-after 3000 --restart-tries 600 \"yarn run dev:scss\" \"yarn dev:server\"",
-    "dev:server": "yarn run live-server --cors --no-css-inject --ignore=node_modules,scss",
     "dev:scss": "yarn run chokidar 'scss/**/*.scss' --command \"yarn build:scss\"",
-    "dev:deploy": "yarn run chokidar 'css/**/*.css' '**/*.html' --ignore node_modules --ignore scss --command \"yarn deploy\""
+    "dev:server": "yarn run live-server --cors --no-css-inject --ignore=node_modules,scss",
+    "dev:deploy": "yarn run chokidar 'css/**/*.css' '**/*.html' --ignore node_modules --ignore scss --command \"yarn deploy\"",
+    "dev": "yarn run concurrently --restart-after 3000 --restart-tries 600 \"yarn run dev:scss\" \"yarn dev:server\""
   },
   "devDependencies": {
     "chokidar-cli": "^1.2.1",
