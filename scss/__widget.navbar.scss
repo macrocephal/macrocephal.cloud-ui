@@ -17,6 +17,28 @@
         font-weight: bold;
         padding: $padding;
         font-family: Signika;
+
+        &:not(:first-child) {
+            position: relative;
+
+            &::before {
+                width: 0;
+                bottom: 0;
+                left: 50%;
+                content: '';
+                height: 3px;
+                position: absolute;
+                background-color: transparent;
+                transition: none ease-in-out .3s;
+                transition-property: left, width, background-color;
+            }
+
+            &:hover::before {
+                left: 0;
+                width: 100%;
+                background-color: $color-inverse;
+            }
+        }
     }
 
     > hr {
