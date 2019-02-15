@@ -1,9 +1,6 @@
 @import './_selector';
 @import './_env';
 
-@import './_widget.navbar';
-@import './_widget.headline';
-
 
 
 * {
@@ -76,4 +73,7 @@ html > body {
     }
 }
 
+
+@import './_widget.navbar';
+@import './_widget.headline';
 @import './footer';
