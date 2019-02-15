@@ -9,6 +9,7 @@
         flex-direction: column;
 
         > :not( hr ):first-child {
+            text-align: center;
             border-bottom: 3px $color-inverse solid;
         }
     }
@@ -47,6 +48,12 @@
 
         ~ :not( hr ) {
             font-weight: normal;
+
+            @media ( max-width: 520px ) {
+                overflow: hidden;
+                padding: 0;
+                height: 0;
+            }
         }
     }
 }
