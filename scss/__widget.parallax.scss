@@ -8,10 +8,8 @@
         top: 0;
         margin: 0;
         padding: 0;
-        display: flex;
         position: sticky;
         min-height: 100vh;
-        flex-direction: row;
         background-color: white;
 
         &:nth-child(2n) {
@@ -19,19 +17,13 @@
             background-color: burlywood;
         }
 
+        &:not(:first-child) {
+            box-shadow: 0 -1em 2em rgba(0, 0, 0, .3);
+        }
+
         @for $i from 0 through 4 {
             &:nth-child(#{$i + 1}) {
                 top: #{-5em * (1 + $i % 4)};
-            }
-        }
-
-        > :nth-child( n ) {
-            padding: 1em;
-
-            &.static {
-                min-width: 320px;
-                max-width: 320px;
-                flex-basis: auto;
             }
         }
     }
