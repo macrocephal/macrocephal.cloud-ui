@@ -62,5 +62,6 @@ html > body > nav {
     top: 0;
     z-index: 999;
     @extend .navbar;
+    position: -webkit-sticky;
     position: sticky;
 }
